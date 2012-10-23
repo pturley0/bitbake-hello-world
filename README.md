@@ -5,7 +5,7 @@ BitBake "Hello, World!" Project
 This is nearly the smallest, valid BitBake project that prints "Hello, World!" This is useful
 because:
 
-1. It can serve as a simple basis from which to test and explore basic BitBake features.<br><br>
+1. It can serve as a simple basis from which to test and explore basic BitBake features.<br>
 
 2. It reveals what is fundamental to BitBake itself, apart from the superstructure that
 OpenEmbedded, Yocto, _et. al._ put on top of it.
@@ -33,11 +33,11 @@ Some things to note:
 
 1. This is not the _smallest_ such BitBake project. For example, the `DESCRIPTION` and `PV`
 variables need not be assigned in `a.bb`. I set those variables because I wanted `show-layers` and
-`show-recipes` to display reasonable information.<br><br>
+`show-recipes` to display reasonable information.<br>
 
 2. Some of the variables set in `bitbake.conf` have "simplified" values. For example, you would
 _not_ want to use these values if there were multiple recipes and you had to disambiguate the output
-from each of them.<br><br>
+from each of them.<br>
 
 3. On the other hand, _all_ the variable assignments in `bitbake.conf` are _essential_ to BitBake
 itself. If you remove any one of those assignments, BitBake will either declare an error or die
